@@ -1,0 +1,49 @@
+table,td,th{
+    border: 2px solid #8a2be2;
+    border-collapse: collapse;
+    
+    text-align: center;
+}
+th{
+    color: darkorchid;
+    background-color: darkgrey;
+    font-size: large;
+    font-weight: bolder;
+    
+}
+td{
+    color: fuchsia;
+    background-color: cyan;
+    font-style: italic;
+    font-size: medium;
+    text-transform: uppercase;
+}
+#india{
+    color: rgba(130, 245, 14, 0.742);
+    background-color: cornsilk;
+    border: 2px solid gold;
+    padding: 2px;
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 3px;
+    width:fit-content;
+    text-align: center;
+
+}
+*{
+    background-color:silver;
+
+}
+.cup{
+    color: #e22bbd;
+    background-color: aqua;
+    border: 8px solid yellowgreen;
+    text-decoration: underline;
+    padding: 3px;
+    width: max-content;
+
+
+}
+img{
+    border:2px double yellow ;
+}
