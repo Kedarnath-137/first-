@@ -1,0 +1,47 @@
+#cont1{
+    
+    display: inline-block;
+    display: flex;
+    justify-content: space-evenly;
+
+    
+}
+#c1{
+    border-radius: 50%;
+    margin-top: 10px;
+}
+#cont2{
+    display: inline-block;
+    display: flex;
+     justify-content: space-evenly;
+    
+}
+#c2{
+    border-radius: 50%;
+    margin-top: 5px;
+}
+#cont3{
+    display: inline-block;
+    display: flex;
+     justify-content: space-evenly;
+    
+}
+#C3{
+    border-radius: 80%;
+}
+#cont4{
+    display: inline-block;
+    display: flex;
+     justify-content: space-evenly;
+}
+#c4{
+    border-radius: 50%;
+}
+#cont5{
+    display: inline-block;
+    display: flex;
+     justify-content: space-evenly;
+}
+#c5{
+    border-radius: 80%;
+}
