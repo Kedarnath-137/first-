@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess board</title>
+  </head>
+  <style>
+    .child1 {
+      /* width: 200px;
+      height: 200px;
+      display: inline-block;
+      border: 2px solid white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-size: cover;
+      background-color: aqua; */
+      width: 200px;
+      height: 200px;
+      border: 2px solid black;
+      display: inline-block;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .child {
+      /* width: 200px;
+      height: 200px;
+      display: inline-block;
+      border: 2px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-size: cover;
+      background-color: black; */
+      width: 200px;
+      height: 200px;
+      border: 2px solid black;
+      display: inline-block;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .main {
+      width: 1700px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+  </style>
+  <body>
+    <div class="main">
+      <div class="child1">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxeoORCiGuLo_lDePZxsSbAGKJtFqii1gtmg&usqp=CAU"
+          width="200"
+        />
+      </div>
+      <div class="child">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWWqmuRvFU27VO2inEupIeomx2DDgKgqWZMQ&usqp=CAU"
+          width="140"
+        />
+      </div>
+      <div class="child1">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbEEcJb6taBr_TFKmxyd2MqpP_N9dtZDrSCeODZVm6k7kSXFvWvI1Oo0Zo_I-e22fREGw&usqp=CAU"
+          width="200"
+        />
+      </div>
+      <div class="child">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKzlc3lXtCA7yuklTpfLAaBOpSpcXHW2YzlQ&usqp=CAU"
+          width="200"
+        />
+      </div>
+      <div class="child1">
+        <img
+          src="https://flyclipart.com/thumb2/bishop-chess-piece-clip-art-619264.png"
+          width="200"
+        />
+      </div>
+      <div class="child">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbEEcJb6taBr_TFKmxyd2MqpP_N9dtZDrSCeODZVm6k7kSXFvWvI1Oo0Zo_I-e22fREGw&usqp=CAU"
+          width="200"
+        />
+      </div>
+      <div class="child1">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWWqmuRvFU27VO2inEupIeomx2DDgKgqWZMQ&usqp=CAU"
+          width="140"
+        />
+      </div>
+      <div class="child">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxeoORCiGuLo_lDePZxsSbAGKJtFqii1gtmg&usqp=CAU"
+          width="200"
+        />
+      </div>
+      <div class="child">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcbMxVW3_0B2efZKVHB-9CIeD7wUQpwnqxaZNDQp6PWF7cbEHFSVgoPxVfP1QzqEF03ow&usqp=CAU"
+          width="200"
+        />
+      </div>
+      <div class="child1">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcbMxVW3_0B2efZKVHB-9CIeD7wUQpwnqxaZNDQp6PWF7cbEHFSVgoPxVfP1QzqEF03ow&usqp=CAU"
+          width="200"
+        />
+      </div>
+      <div class="child">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcbMxVW3_0B2efZKVHB-9CIeD7wUQpwnqxaZNDQp6PWF7cbEHFSVgoPxVfP1QzqEF03ow&usqp=CAU"
+          width="200"
+        />
+      </div>
+      <div class="child1">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcbMxVW3_0B2efZKVHB-9CIeD7wUQpwnqxaZNDQp6PWF7cbEHFSVgoPxVfP1QzqEF03ow&usqp=CAU"
+          width="200"
+        />
+      </div>
+      <div class="child">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcbMxVW3_0B2efZKVHB-9CIeD7wUQpwnqxaZNDQp6PWF7cbEHFSVgoPxVfP1QzqEF03ow&usqp=CAU"
+          width="200"
+        />
+      </div>
+      <div class="child1">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcbMxVW3_0B2efZKVHB-9CIeD7wUQpwnqxaZNDQp6PWF7cbEHFSVgoPxVfP1QzqEF03ow&usqp=CAU"
+          width="200"
+        />
+      </div>
+      <div class="child">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcbMxVW3_0B2efZKVHB-9CIeD7wUQpwnqxaZNDQp6PWF7cbEHFSVgoPxVfP1QzqEF03ow&usqp=CAU"
+          width="200"
+        />
+      </div>
+      <div class="child1">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcbMxVW3_0B2efZKVHB-9CIeD7wUQpwnqxaZNDQp6PWF7cbEHFSVgoPxVfP1QzqEF03ow&usqp=CAU"
+          width="200"
+        />
+      </div>
+      <div class="child1"></div>
+      <div class="child"></div>
+      <div class="child1"></div>
+      <div class="child"></div>
+      <div class="child1"></div>
+      <div class="child"></div>
+      <div class="child1"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child1"></div>
+      <div class="child"></div>
+      <div class="child1"></div>
+      <div class="child"></div>
+      <div class="child1"></div>
+      <div class="child"></div>
+      <div class="child1"></div>
+      <div class="child1"></div>
+      <div class="child"></div>
+      <div class="child1"></div>
+      <div class="child"></div>
+      <div class="child1"></div>
+      <div class="child"></div>
+      <div class="child1"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child1"></div>
+      <div class="child"></div>
+      <div class="child1"></div>
+      <div class="child"></div>
+      <div class="child1"></div>
+      <div class="child"></div>
+      <div class="child1"></div>
+      <div class="child1">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcbMxVW3_0B2efZKVHB-9CIeD7wUQpwnqxaZNDQp6PWF7cbEHFSVgoPxVfP1QzqEF03ow&usqp=CAU"
+          width="200"
+        />
+      </div>
+      <div class="child">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcbMxVW3_0B2efZKVHB-9CIeD7wUQpwnqxaZNDQp6PWF7cbEHFSVgoPxVfP1QzqEF03ow&usqp=CAU"
+          width="200"
+        />
+      </div>
+      <div class="child1">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcbMxVW3_0B2efZKVHB-9CIeD7wUQpwnqxaZNDQp6PWF7cbEHFSVgoPxVfP1QzqEF03ow&usqp=CAU"
+          width="200"
+        />
+      </div>
+      <div class="child">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcbMxVW3_0B2efZKVHB-9CIeD7wUQpwnqxaZNDQp6PWF7cbEHFSVgoPxVfP1QzqEF03ow&usqp=CAU"
+          width="200"
+        />
+      </div>
+      <div class="child1">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcbMxVW3_0B2efZKVHB-9CIeD7wUQpwnqxaZNDQp6PWF7cbEHFSVgoPxVfP1QzqEF03ow&usqp=CAU"
+          width="200"
+        />
+      </div>
+      <div class="child">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcbMxVW3_0B2efZKVHB-9CIeD7wUQpwnqxaZNDQp6PWF7cbEHFSVgoPxVfP1QzqEF03ow&usqp=CAU"
+          width="200"
+        />
+      </div>
+      <div class="child1">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcbMxVW3_0B2efZKVHB-9CIeD7wUQpwnqxaZNDQp6PWF7cbEHFSVgoPxVfP1QzqEF03ow&usqp=CAU"
+          width="200"
+        />
+      </div>
+      <div class="child">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcbMxVW3_0B2efZKVHB-9CIeD7wUQpwnqxaZNDQp6PWF7cbEHFSVgoPxVfP1QzqEF03ow&usqp=CAU"
+          width="200"
+        />
+      </div>
+      <div class="child">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxeoORCiGuLo_lDePZxsSbAGKJtFqii1gtmg&usqp=CAU"
+          width="200"
+        />
+      </div>
+      <div class="child1">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWWqmuRvFU27VO2inEupIeomx2DDgKgqWZMQ&usqp=CAU"
+          width="140"
+        />
+      </div>
+      <div class="child">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbEEcJb6taBr_TFKmxyd2MqpP_N9dtZDrSCeODZVm6k7kSXFvWvI1Oo0Zo_I-e22fREGw&usqp=CAU"
+          width="200"
+        />
+      </div>
+      <div class="child1">
+        <img
+          src="https://flyclipart.com/thumb2/bishop-chess-piece-clip-art-619264.png"
+          width="200"
+        />
+      </div>
+      <div class="child">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKzlc3lXtCA7yuklTpfLAaBOpSpcXHW2YzlQ&usqp=CAU"
+          width="200"
+        />
+      </div>
+      <div class="child1">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbEEcJb6taBr_TFKmxyd2MqpP_N9dtZDrSCeODZVm6k7kSXFvWvI1Oo0Zo_I-e22fREGw&usqp=CAU"
+          width="200"
+        />
+      </div>
+      <div class="child">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWWqmuRvFU27VO2inEupIeomx2DDgKgqWZMQ&usqp=CAU"
+          width="140"
+        />
+      </div>
+      <div class="child1">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxeoORCiGuLo_lDePZxsSbAGKJtFqii1gtmg&usqp=CAU"
+          width="200"
+        />
+      </div>
+    </div>
+  </body>
+</html>

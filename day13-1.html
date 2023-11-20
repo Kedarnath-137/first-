@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .nani p {
+        background-color: papayawhip;
+        color: blue;
+        font-size: 22px;
+      }
+      .ntr > p {
+        background-color: yellow;
+        color: crimson;
+        font-size: 22px;
+      }
+      .ram + p {
+        color: greenyellow;
+      }
+
+      h1 {
+        color: fuchsia;
+        font-family: serif;
+      }
+      h2 {
+        color: indianred;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Descendant selector</h1>
+    <div class="nani">
+      <h2>nani movies</h2>
+      <p>ninnu kori</p>
+      <p>ante sundaraniki</p>
+      <section><p>dasara</p></section>
+    </div>
+    <h1>Child selector</h1>
+    <div class="ntr">
+      <h2>Junior NTR movies</h2>
+      <p>RRR</p>
+      <p>Devara</p>
+      <p>Janatha Garage</p>
+      <p>Adhurs</p>
+      <div><p>temper</p></div>
+      <p>Jai Lava Kusa</p>
+    </div>
+    <h1>Adjacent Sibling selector</h1>
+    <div class="ram">
+      <h2>ram movies</h2>
+      <p>Orange</p>
+    </div>
+    <p>Game Changer</p>
+    <p>chirutha</p>
+    <div class="ram">
+      <p>RRR</p>
+    </div>
+  </body>
+</html>
