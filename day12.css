@@ -1,0 +1,30 @@
+.day {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: cornsilk;
+  color: fuchsia;
+}
+.item {
+  width: 1500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#container {
+  display: flex;
+  flex-direction: row;
+}
+#c1 {
+  text-align: center;
+  color: goldenrod;
+  font-size: larger;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
