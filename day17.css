@@ -1,0 +1,47 @@
+.container {
+  
+
+  width: 550px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px ;
+  background-color: rgb(40, 43, 40);
+  gap: 10px;
+  justify-content: stretch;
+  outline-style: inset;
+  outline-offset: 5px; 
+  top: 25px;px;
+
+}
+.day {
+  border: 2px solid black;
+  text-align: center;
+  padding: 20px;
+  background-color: gray;
+  color: whitesmoke;
+  font-weight: bolder;
+  box-shadow: 3px 3px;
+}
+body {
+  margin: 30px;
+  font-family: sans-serif;
+}
+.day1{
+  grid-column: span 5;
+  text-align: right;
+  font-size: 24px;
+
+}
+.day21{
+  grid-area: 6 / 5 / span 2 / span 1;
+  background-color: orangered;
+
+}
+
+
+.day0{
+  grid-column: span 5;
+  font-weight: 42px;
+  background-color: silver;
+  
+}
