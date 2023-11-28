@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        color: indigo;
+        font-size: 26px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: cyan;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-image: radial-gradient(white, lightgreen);
+        font: 1.5rem sans-serif;
+      }
+      header,
+      footer {
+        position: sticky;
+      }
+      header {
+        top: 0;
+        background-color: darkslategray;
+        text-align: center;
+        color: whitesmoke;
+      }
+      footer {
+        bottom: 0;
+        background-color: darkslategray;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: whitesmoke;
+      }
+      main {
+        flex-grow: 1;
+      }
+      a {
+        text-decoration: none;
+        color: chartreuse;
+      }
+      .k1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      .b1 {
+        width: 500px;
+        height: 450px;
+        border: 2px solid yellowgreen;
+        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .k2 {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 100px;
+        bottom: 500px;
+      }
+      @media screen and (min-width: 320px) {
+        .k2 {
+          background-image: radial-gradient(whitesmoke, blue);
+        }
+      }
+      @media screen and (min-width: 768px) {
+        .k2 {
+          background-image: radial-gradient(whitesmoke, yellowgreen);
+        }
+        .b1 {
+          background-color: darkolivegreen;
+        }
+        h1,
+        h2 {
+          color: khaki;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>header</h1>
+      <br />
+      <h2>places to visit in india</h2>
+      <div class="k1">
+        <a href="#">Leh Ladakh</a>
+        <a href="#">Srinagar</a>
+        <a href="#">manali</a>
+        <a href="#">Andaman</a>
+      </div>
+    </header>
+    <main>
+      <div class="k2">
+        <div class="b1">
+          <span>Ladakh</span>
+          <img
+            src="https://www.holidify.com/images/bgImages/LADAKH.jpg"
+            alt="img"
+            height="300"
+          />
+        </div>
+        <div class="b1">
+          <span>Srinagar</span>
+          <img
+            src="https://www.holidify.com/images/bgImages/SRINAGAR.jpg"
+            alt="img"
+            height="300"
+          />
+        </div>
+        <div class="b1">
+          <span>manali</span>
+          <img
+            src="https://www.holidify.com/images/bgImages/MANALI.jpg"
+            alt="img"
+            height="300"
+          />
+        </div>
+        <div class="b1">
+          <span>manali</span>
+          <img
+            src="https://www.holidify.com/images/bgImages/ANDAMAN-NICOBAR-ISLANDS.jpg"
+            alt="img"
+            height="300"
+          />
+        </div>
+        <div class="b1">
+          <span>UDAIPUR</span>
+          <img
+            src="https://www.holidify.com/images/bgImages/UDAIPUR.jpg"
+            alt="img"
+            height="300"
+          />
+        </div>
+        <div class="b1">
+          <span>Goa</span>
+          <img
+            src="https://www.holidify.com/images/bgImages/GOA.jpg"
+            alt="img"
+            height="300"
+          />
+        </div>
+        <div class="b1">
+          <span>ooty</span>
+          <img
+            src="https://www.holidify.com/images/bgImages/KODAIKANAL.jpg"
+            alt="img"
+            height="300"
+          />
+        </div>
+        <div class="b1">
+          <span>kodaikanal</span>
+          <img
+            src="https://www.holidify.com/images/bgImages/OOTY.jpg"
+            height="300"
+          />
+        </div>
+        <div class="b1">
+          <span>alleppy</span>
+          <img
+            src="https://www.holidify.com/images/bgImages/ALLEPPEY.jpg"
+            alt="img"
+            height="300"
+          />
+        </div>
+        <div class="b1">
+          <span>Lakshadweep</span>
+          <img
+            src="https://www.holidify.com/images/bgImages/LAKSHADWEEP-ISLANDS.jpg"
+            alt="img"
+            height="300"
+          />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <h1>footer</h1>
+    </footer>
+  </body>
+</html>
