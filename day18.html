@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      .container {
+        background-color: cadetblue;
+        border: 2px solid black;
+        margin-left: 25px;
+        margin-top: 25px;
+        height: 1300px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+      }
+      .b1 {
+        width: 800px;
+        height: 1100px;
+        border: 2px solid;
+        margin-top: 25px;
+        background-color: rgb(226, 234, 231);
+      }
+      .container1 {
+        margin-left: 50px;
+        margin-top: 25px;
+        width: 600px;
+        border: 2px solid;
+        height: 1100px;
+        background-color: rgb(178, 133, 133);
+      }
+      .item1 {
+        border: 2px solid rgb(200, 221, 136);
+        width: 500px;
+        height: 35px;
+        display: flex;
+      }
+
+      .th {
+        margin-left: 25px;
+        background-color: blanchedalmond;
+        display: inline-block;
+        color: coral;
+      }
+      .td {
+        display: none;
+        position: absolute;
+        margin-left: 800px;
+        margin-top: 80px;
+      }
+      .a1 {
+        background-color: cadetblue;
+      }
+      .a1:checked ~ .td {
+        display: block;
+        width: 95px;
+        height: 85px;
+        background-color: darkkhaki;
+        color: darkblue;
+        transform: none;
+      }
+      .a2:checked ~ .td {
+        display: block;
+        width: 95px;
+        height: 85px;
+        background-color: darkkhaki;
+        color: darkblue;
+        transform: rotate(10deg);
+      }
+      .a3:checked ~ .td {
+        display: block;
+        width: 95px;
+        height: 85px;
+        background-color: darkkhaki;
+        color: darkblue;
+        transform: rotate(45deg);
+      }
+      .a4:checked ~ .td {
+        display: block;
+        width: 95px;
+        height: 85px;
+        background-color: darkkhaki;
+        color: darkblue;
+        transform: rotateX(45deg);
+      }
+      .a5:checked ~ .td {
+        display: block;
+        width: 95px;
+        height: 85px;
+        background-color: darkkhaki;
+        color: darkblue;
+        transform: rotateX(100deg);
+      }
+      .a6:checked ~ .td {
+        display: block;
+        width: 95px;
+        height: 85px;
+        background-color: darkkhaki;
+        color: darkblue;
+        transform: rotateY(45deg);
+      }
+      .a7:checked ~ .td {
+        display: block;
+        width: 95px;
+        height: 85px;
+        background-color: darkkhaki;
+        color: darkblue;
+        transform: rotateY(80deg);
+      }
+      .a8:checked ~ .td {
+        display: block;
+        width: 95px;
+        height: 85px;
+        background-color: darkkhaki;
+        color: darkblue;
+        transform: skew(20deg, 20deg);
+      }
+      .a9:checked ~ .td {
+        display: block;
+        width: 95px;
+        height: 85px;
+        background-color: darkkhaki;
+        color: darkblue;
+        transform: skew(30deg, 30deg);
+      }
+      .a10:checked ~ .td {
+        display: block;
+        width: 95px;
+        height: 85px;
+        background-color: darkkhaki;
+        color: darkblue;
+        transform: skewX(30deg);
+      }
+      .a11:checked ~ .td {
+        display: block;
+        width: 95px;
+        height: 85px;
+        background-color: darkkhaki;
+        color: darkblue;
+        transform: skewX(40deg);
+      }
+      .a12:checked ~ .td {
+        display: block;
+        width: 95px;
+        height: 85px;
+        background-color: darkkhaki;
+        color: darkblue;
+        transform: skewY(30deg);
+      }
+      .a13:checked ~ .td {
+        display: block;
+        width: 95px;
+        height: 85px;
+        background-color: darkkhaki;
+        color: darkblue;
+        transform: skewY(40deg);
+      }
+      .a14:checked ~ .td {
+        display: block;
+        width: 95px;
+        height: 85px;
+        background-color: darkkhaki;
+        color: darkblue;
+        transform: translate(20px, 10px);
+      }
+      .a15:checked ~ .td {
+        display: block;
+        width: 95px;
+        height: 85px;
+        background-color: darkkhaki;
+        color: darkblue;
+        transform: translate(20px, 20px);
+      }
+      .a16:checked ~ .td {
+        display: block;
+        width: 95px;
+        height: 85px;
+        background-color: darkkhaki;
+        color: darkblue;
+        transform: scale(2, 2);
+      }
+      .a17:checked ~ .td {
+        display: block;
+        width: 95px;
+        height: 85px;
+        background-color: darkkhaki;
+        color: darkblue;
+        transform: scale(2, 3);
+      }
+      .a18:checked ~ .td {
+        display: block;
+        width: 95px;
+        height: 85px;
+        background-color: darkkhaki;
+        color: darkblue;
+        transform: matrix(0.866, 0.7, -0.8, 0.866, 0, 0);
+      }
+      .a19:checked ~ .td {
+        display: block;
+        width: 95px;
+        height: 85px;
+        background-color: darkkhaki;
+        color: darkblue;
+        transform: matrix(0.586, 0.8, -0.8, 0.586, 0, 0);
+      }
+      .a20:checked ~ .td {
+        display: block;
+        width: 95px;
+        height: 85px;
+        background-color: darkkhaki;
+        color: darkblue;
+        transform: matrix(0.586, 0.8, -0.8, 0.586, 40, 30);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container1">
+        <div class="item1">
+          <input type="radio" name="none" class="a1" />
+          <div class="th">transform: none;</div>
+          <div class="td">see different transform values</div>
+        </div>
+        <br />
+        <div class="item1">
+          <input type="radio" name="none" class="a2" />
+          <div class="th">transform: rotate(10deg);</div>
+          <div class="td">see different transform values</div>
+        </div>
+        <br />
+        <div class="item1">
+          <input type="radio" name="none" class="a3" />
+          <div class="th">transform: rotate(45deg);</div>
+          <div class="td">see different transform values</div>
+        </div>
+        <br />
+        <div class="item1">
+          <input type="radio" name="none" class="a4" />
+          <div class="th">transform: rotateX(45deg);</div>
+          <div class="td">see different transform values</div>
+        </div>
+        <br />
+        <div class="item1">
+          <input type="radio" name="none" class="a5" />
+          <div class="th">transform: rotateX(100deg);</div>
+          <div class="td">see different transform values</div>
+        </div>
+        <br />
+        <div class="item1">
+          <input type="radio" name="none" class="a6" />
+          <div class="th">transform: rotateY(45deg);</div>
+          <div class="td">see different transform values</div>
+        </div>
+        <br />
+        <div class="item1">
+          <input type="radio" name="none" class="a7" />
+          <div class="th">transform: rotateY(80deg);</div>
+          <div class="td">see different transform values</div>
+        </div>
+        <br />
+        <div class="item1">
+          <input type="radio" name="none" class="a8" />
+          <div class="th">transform: skew(20deg,20deg);</div>
+          <div class="td">see different transform values</div>
+        </div>
+        <br />
+        <div class="item1">
+          <input type="radio" name="none" class="a9" />
+          <div class="th">transform: skew(30deg,30deg);</div>
+          <div class="td">see different transform values</div>
+        </div>
+        <br />
+        <div class="item1">
+          <input type="radio" name="none" class="a10" />
+          <div class="th">transform: skewX(30deg);</div>
+          <div class="td">see different transform values</div>
+        </div>
+        <br />
+        <div class="item1">
+          <input type="radio" name="none" class="a11" />
+          <div class="th">transform: skewX(40deg);</div>
+          <div class="td">see different transform values</div>
+        </div>
+        <br />
+        <div class="item1">
+          <input type="radio" name="none" class="a12" />
+          <div class="th">transform: skewY(30deg);</div>
+          <div class="td">see different transform values</div>
+        </div>
+        <br />
+        <div class="item1">
+          <input type="radio" name="none" class="a13" />
+          <div class="th">transform: skewY(40deg);</div>
+          <div class="td">see different transform values</div>
+        </div>
+        <br />
+        <div class="item1">
+          <input type="radio" name="none" class="a14" />
+          <div class="th">transform: translate(20px,10px);</div>
+          <div class="td">see different transform values</div>
+        </div>
+        <br />
+        <div class="item1">
+          <input type="radio" name="none" class="a15" />
+          <div class="th">transform: translate(20px,20px);</div>
+          <div class="td">see different transform values</div>
+        </div>
+        <br />
+        <div class="item1">
+          <input type="radio" name="none" class="a16" />
+          <div class="th">transform: scale(2,2);</div>
+          <div class="td">see different transform values</div>
+        </div>
+        <br />
+        <div class="item1">
+          <input type="radio" name="none" class="a17" />
+          <div class="th">transform: scale(2,3);</div>
+          <div class="td">see different transform values</div>
+        </div>
+        <br />
+        <div class="item1">
+          <input type="radio" name="none" class="a18" />
+          <div class="th">transform: matrix(0.866,0.7,-0.8,0.866,0,0);</div>
+          <div class="td">see different transform values</div>
+        </div>
+        <br />
+        <div class="item1">
+          <input type="radio" name="none" class="a19" />
+          <div class="th">transform: matrix(0.586,0.8,-0.8,0.586,0,0);</div>
+          <div class="td">see different transform values</div>
+        </div>
+        <br />
+        <div class="item1">
+          <input type="radio" name="none" class="a20" />
+          <div class="th">transform: matrix(0.586,0.8,-0.8,0.586,40,30);</div>
+          <div class="td">see different transform values</div>
+        </div>
+      </div>
+
+      <div class="b1"></div>
+    </div>
+  </body>
+</html>
