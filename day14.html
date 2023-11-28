@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .p{
+        position:absolute;
+        top: 100px;
+        right: 200px;
+        font-size: larger;
+        
+   }
+            .p1{
+                position: relative;
+                left: 800px;
+                bottom: 450px;
+                font-size: larger;
+                height: 500px;
+            }
+            .navbar{
+                background-color: rgb(133, 125, 141);
+                display: flex;
+                flex-direction: row;
+                font-size: 22px;
+                justify-content: space-evenly;
+                position:sticky;
+                top:0;
+            }
+ </style>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact us</a>
+        <a href="#">Reviews</a>
+        <a href="#">Help</a>
+    </div>
+    <br>
+    <br>
+    <div  style="color: rgb(119, 0, 255); background-color: beige; border: 2px solid beige;">
+        <img src="data:image/jpeg;base64,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" width="450px" height="450px">
+        <div class="p"><p>Features: </p>
+            <p>Samsung S23ultra </p>
+         <p>Operating System	Android 13.0</p> 
+            <p> Snapdragon™: 8 Gen 2  </p>
+            <p>Storage:</p>
+            <p>Battery Power (In mAH)5000.00 Milliamp Hours</p>
+            <p>Processor Brand
+            Snapdragon 8 Gen 2</p>
+            <p>Screen Type
+            Indicates the kind of technology used by the display to light-up the screen
+            AMOLED</p>
+        </div>
+    </div>
+        <br>
+        <br>
+        <div style= "color: rgb(255, 127, 221);background-color: beige; border: 2px solid bisque;">  
+            <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-pro-model-unselect-gallery-2-202309_GEO_EMEA?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1693010532692" width="450" height="450">
+            <div class="p1">
+            <p>Features</p> 
+            <p>I phone15 pro</p>
+            <p>Display:17.00 cm (6.7″)  Super Retina XDR displayfootnote</p>
+            <p>color:Titanium with textured matt Action button</p>
+            <p>Pro camera system:48MP Main</p>
+            <p>storage:512gb</p>
+            <p>Battery:29 hours video playback</p>
+            <p>USB‑C:Supports USB 3 for up to 20x faster transfers footnote ⁵</p>
+       </div>
+    </body>
+
+</html>
