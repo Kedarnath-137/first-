@@ -1,0 +1,148 @@
+.part1 {
+  width: 450px;
+  height: 1300px;
+  border: 1px solid black;
+  gap: 10px;
+  display: inline-block;
+  box-shadow: 2px 2px 2px 2px gray;
+}
+.part2 {
+  width: 1000px;
+  height: 600px;
+  border: 1px solid black;
+  display: inline-block;
+  gap: 20px;
+  box-shadow: 2px 2px 2px 2px gray;
+}
+.part3 {
+  width: 1000px;
+  height: 600px;
+  border: 1px solid black;
+  display: inline-block;
+  gap: 20px;
+  box-shadow: 2px 2px 2px 2px gray;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  position: absolute;
+
+  margin-left: 460px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-left: 45px;
+  font-family: sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.b1 {
+  width: 400px;
+  height: 16px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+.b2 {
+  width: 350px;
+  height: 16px;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: green;
+  text-align: center;
+  color: whitesmoke;
+}
+.b3 {
+  width: 400px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.b4 {
+  width: 350px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: green;
+}
+.b5 {
+  width: 260px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: green;
+}
+.b6 {
+  width: 150px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: green;
+}
+
+figcaption {
+  position: absolute;
+  top: 345px;
+  font-size: 24px;
+  left: 80px;
+  color: coral;
+}
+.g1 {
+  margin-left: 20px;
+  color: green;
+}
+.b7 {
+  width: 280px;
+  height: 16px;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: green;
+  text-align: center;
+  color: whitesmoke;
+}
+.b8 {
+  width: 190px;
+  height: 16px;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: green;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.b9 {
+  width: 100px;
+  height: 16px;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: green;
+  color: whitesmoke;
+  text-align: center;
+}
+.f1 {
+  width: 100%;
+  height: auto;
+  background-color: green;
+  text-align: center;
+  color: whitesmoke;
+}
+.g3 {
+  margin-left: 20px;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+}
+.k13 {
+  background-color: green;
+  color: whitesmoke;
+}
+body {
+  background-color: azure;
+}
